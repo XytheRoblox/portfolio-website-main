@@ -2,38 +2,144 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Backend Dev Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan Lin – Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f9fafb, #edf2f7);
+            color: #1a202c;
+        }
+        
+        header,
+        section,
+        footer {
+            padding: 4rem 2rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        
+        h1,
+        h2 {
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        p,
+        li {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        nav a,
+        .btn {
+            text-decoration: none;
+            color: #3182ce;
+            font-weight: 600;
+        }
+        
+        .project {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        footer {
+            font-size: 0.9rem;
+            text-align: center;
+            color: #718096;
+        }
+        
+        .project h3 {
+            margin-top: 0;
+        }
+        
+        .contact a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #2b6cb0;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>👨‍💻 My Backend Projects</h1>
-        <p>Welcome to my developer portfolio. Here's what I've been building.</p>
+        <h1>Jordan Lin</h1>
+        <p>Web Developer · Frontend & Full Stack</p>
+        <p><em>Designing digital experiences that feel intuitive and perform beautifully.</em></p>
+        <nav><a href="#projects">View Projects</a></nav>
     </header>
 
-    <section class="projects">
-        <div class="project-card">
-            <h2>🖥️ Server Hosting Platform</h2>
-            <p>A custom-built platform that allows users to spin up and manage servers from a web UI. Features monitoring, logs, and deployment automation.</p>
+    <section>
+        <h2>About Me</h2>
+        <p>I build interfaces that load fast, scale well, and stay maintainable. Whether it's prototyping in React or deploying a full-stack app, I love the blend of logic and design that makes the web sing.</p>
+        <ul>
+            <li>Languages: JavaScript, TypeScript, Python</li>
+            <li>Frameworks: React, Next.js, Node.js</li>
+            <li>Tools: Git, Figma, Vercel, Supabase</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Frond</h3>
+            <p>A minimalist plant care tracker built with React and Supabase.</p>
             <ul>
-                <li>🛠️ Built with Node.js, Express, and Docker</li>
-                <li>📊 Realtime server logs via WebSocket</li>
-                <li>🔐 JWT-based user authentication</li>
+                <li>Real-time reminders based on last watered</li>
+                <li>Login/auth for multiple users</li>
+                <li>Responsive mobile-first layout</li>
             </ul>
-            <div class="buttons">
-                <a href="https://github.com/yourname/server-hosting-platform" target="_blank">View Code</a>
-                <a href="https://your-demo-url.com" target="_blank">Live Demo</a>
-            </div>
+            <p><strong>Stack:</strong> React, Tailwind, Supabase, Vercel</p>
+        </div>
+
+        <div class="project">
+            <h3>ResumeForge</h3>
+            <p>A sleek, browser-based resume builder with live previews.</p>
+            <ul>
+                <li>Drag-and-drop sections</li>
+                <li>Export to PDF</li>
+                <li>Light/dark mode toggle</li>
+            </ul>
+            <p><strong>Stack:</strong> Vue 3, Pinia, HTML2Canvas, Firebase</p>
+        </div>
+
+        <div class="project">
+            <h3>NiteNote</h3>
+            <p>A distraction-free note-taking app with ambient soundscapes.</p>
+            <ul>
+                <li>Markdown support</li>
+                <li>Offline mode with localStorage</li>
+                <li>Embedded ambient music player</li>
+            </ul>
+            <p><strong>Stack:</strong> Next.js, Markdown-it, Web Audio API</p>
         </div>
     </section>
 
+    <section class="contact">
+        <h2>Let’s Connect</h2>
+        <p>Open to freelance and collab. Always happy to chat about your next idea.</p>
+        <a href="mailto:jordan@devmail.com">jordan@devmail.com</a>
+    </section>
+
     <footer>
-        <p>© 2025 Your Name – <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>© 2025 Jordan Lin. Built with Next.js & hosted on Vercel.</p>
+        <p>
+            <a href="https://github.com/jordanlin">GitHub</a> ·
+            <a href="https://linkedin.com/in/jordanlin">LinkedIn</a>
+        </p>
     </footer>
 </body>
 
