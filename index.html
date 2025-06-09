@@ -2,39 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Backend Dev Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <h1>👨‍💻 My Backend Projects</h1>
-        <p>Welcome to my developer portfolio. Here's what I've been building.</p>
-    </header>
+    <div id="particles-js"></div>
 
-    <section class="projects">
-        <div class="project-card">
-            <h2>🖥️ Server Hosting Platform</h2>
-            <p>A custom-built platform that allows users to spin up and manage servers from a web UI. Features monitoring, logs, and deployment automation.</p>
-            <ul>
-                <li>🛠️ Built with Node.js, Express, and Docker</li>
-                <li>📊 Realtime server logs via WebSocket</li>
-                <li>🔐 JWT-based user authentication</li>
-            </ul>
-            <div class="buttons">
-                <a href="https://github.com/yourname/server-hosting-platform" target="_blank">View Code</a>
-                <a href="https://your-demo-url.com" target="_blank">Live Demo</a>
+    <div class="container">
+        <h1 class="title">/ backend.log</h1>
+        <div class="project">
+            <div class="project-card">
+                <div class="terminal-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="project-content">
+                    <h2 class="code-title">[server-hosting-platform]</h2>
+                    <p>dockerized · websocket logging · jwt auth · node.js</p>
+                    <div class="buttons">
+                        <a href="https://github.com/yourname/server-hosting" target="_blank">Code</a>
+                        <a href="https://your-demo.com" target="_blank">Live</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <p>© 2025 Your Name – <a href="mailto:you@example.com">you@example.com</a></p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
